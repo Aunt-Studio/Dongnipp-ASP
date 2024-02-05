@@ -1,0 +1,18 @@
+﻿@model Dongnipp_ASP.Models.UserLoginModel
+
+<h2>Login</h2>
+
+<form method="post">
+    <label for="username">Username:</label>
+    <input id="username" name="UserName" type="text" />
+
+    <label for="password">Password:</label>
+    <input id="password" name="Password" type="password" />
+
+    <input type="submit" value="Login" />
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <p>@ViewBag.Result</p>
+}
